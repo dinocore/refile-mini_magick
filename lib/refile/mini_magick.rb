@@ -78,7 +78,6 @@ module Refile
         yield cmd if block_given?
         cmd.resize "#{width}x#{height}^"
         cmd.gravity gravity
-        cmd.extent "#{width}x#{height}"
         cmd.merge! [img.path, img.path]
       end
     end
